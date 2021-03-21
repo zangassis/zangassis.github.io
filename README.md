@@ -1,2 +1,3 @@
-# zangassis.github.io
-My page from Github Pages
+# My developer Landing Page
+
+My minimal developer landing page.
