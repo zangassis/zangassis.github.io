@@ -1,33 +1,143 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="responsive.css"
+      media="screen and (max-width: 768px)"
+    />
 
-	<title>Assis Zang | .NET Dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="favicon.ico" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="print.css" media="print">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="./images/github-logo.svg"
+          alt=""
+        />
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a target="_blank" href="https://github.com/zangassis">Github <i class="fab fa-github link-header"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/assis-zang">Linkedin <i class="fab fa-linkedin link-header"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://assiszang.vercel.app">Blog <i class="fab fa-blogger link-header"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://drive.google.com/file/d/195Gsl72sBzanWxXrI1vbZMw8S8GWV35N/view?usp=sharing">Digital CV <i class="fas fa-id-badge link-header"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://dev.to/zangassis">Dev.to <i class="fab fa-dev link-header"></i></a>
+              </li>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/themes/white-grey.css"> 
-</head>
-<body>
-	<main>
-		<div class="intro">Hello, I'm Assis!</div>
-		<div class="tagline">.NET developer 👨🏻‍💻</div>
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/zangassis"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://dev.to/zangassis"><i class="fab fa-dev"></i></a>
-			<a target="_blank" href="https://pt.stackoverflow.com/users/164252/assis-zang"><i class="fab fa-stack-overflow"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/assis-zang"><i class="fab fa-linkedin"></i></a>
-			<a target="_blank" href="https://medium.com/@assiszang"><i class="fab fa-medium"></i></a>
-			<a target="_blank" href="https://assiszang.vercel.app"><i class="fab fa-blogger"></i></a>
-			<a target="_blank" href="https://drive.google.com/file/d/195Gsl72sBzanWxXrI1vbZMw8S8GWV35N/view?usp=sharing"><i class="fas fa-id-badge"></i></a>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h2>
+            Programar é uma arte🎨🖼️
+          </h2>
+          <p>
+            Para mim, desenvolver aplicativos é mais do que resolver problemas, 
+            é tornar o mundo um lugar melhor e mais bonito para se viver! ✨💖 
+            Escrever código é como pintar um quadro, você deve sempre fazer o seu melhor para que quem apreciar 
+            possa ser impactado e transformar positivamente sua vida.👨‍💻
+          </p>
+          <a href="#" class="button">Quero pegar carona nessa cauda de cometa!</a>
+        </div>
+        <img
+          src="./images/programmer-paint-octocat.svg"
+          alt="Octocat programmer paint"
+          class="octocat-programmer-paint"
+        />
+      </div>
+    </section>
+
+    <main>
+           <!--<section class="cards">
+        <div class="card">
+        
+          <picture class="image" alt="Imagem">
+            <source media="(min-width: 768px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg">
+            <source media="(min-width: 320px)" srcset="https://i.ytimg.com/vi/rAzHvYnQ8DY/hqdefault.jpg">
+            <source media="(min-width: 10px)" srcset="https://i.ytimg.com/vi/HN1UjzRSdBk/mqdefault.jpg">
+
+            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" alt="Imagem" />
+            </picture>
+
+          
+          <div class="image">
+            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Formulário Animado com JS puro e CSS Animation | Mayk Brito
+            </p>
+            <div class="info">
+              <p class="text--medium">57 Min</p>
+              <p class="price text--medium">Free</p>
+            </div>
+          </div>
+        </div>
+      </section>-->
+    </main>
+
+    <section id="form">
+      <form action="" class="form">
+        <div class="form-group">
+         <p>📧 Envie-me um email: <div class="social-media"> assiszang@gmail.com</div></p>
+        </div>
+        <br />
+        <div class="form-group">
+          <p>💬 Ou contate-me pelo Whats: <div class="social-media"> (54) 99703 4918</div></p>
+        </div>
+      </form>
+    </section>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <a class="close-modal">
+          <svg viewBox="0 0 20 20">
+            <path
+              fill="#000000"
+              d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"
+            ></path>
+          </svg>
+        </a>
+        <div class="modal-content">
+          <div class="video-background">
+            <div class="video-foreground">
+              <iframe
+                src="https://www.youtube.com/embed/GykTLqODQuU"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-	</main>
-</body>
+    <footer class="footer"><p>By Assis Zang 2021 - Desde 2017 escrevendo código com 💖</p></footer>
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
+  </body>
 </html>
