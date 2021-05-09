@@ -110,10 +110,9 @@ section.hero {
 section.hero .container {
   width: 90%;
   max-width: 980px;
-
   margin: auto;
-
   display: flex;
+  text-align: left;
 }
 
 section.hero p {
@@ -301,8 +300,6 @@ MODAL
   transform: translate(-50%, -50%);
 }
 
-
-
 /*=============== 
 FORM
 ==================*/
@@ -376,7 +373,17 @@ FORM
 
   .social-media {
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 5px; 
+  }
+
+  .mail {
+    text-decoration: none;
+    color: yellowgreen;
+  }
+
+  .fone {
+    text-decoration: none;
+    color: yellowgreen;
   }
 
   footer {
