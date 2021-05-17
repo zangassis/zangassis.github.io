@@ -197,7 +197,7 @@ FORM
 .form-group {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
 }
 
 .form-group label.right-inline {
