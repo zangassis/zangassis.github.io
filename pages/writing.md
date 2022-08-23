@@ -1,4 +1,4 @@
-<img src="docs/assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px; /> 
+<img src="docs/assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" /> 
 
 # My Writing career ✍👨‍💼
 
