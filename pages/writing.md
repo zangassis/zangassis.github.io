@@ -1,3 +1,19 @@
+ <header>
+        <section class="title">
+            <div class="header-image">
+                <img src="assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" />
+            </div>
+            <div class="">
+                <h1><a href="">Assis Zang</a></h1>
+                <nav>
+                    <a href="">Startups</a> ·
+                    <a href="">Software Engineering</a> ·
+                    <a href="">Management</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
 # My Writing career ✍👨‍💼
 
 I've always had an aptitude for writing, since elementary school, I loved to spend hours reading books, this gave me a great facility to interpret texts, something that helped me a lot in my software development career.
