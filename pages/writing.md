@@ -1,7 +1,7 @@
  <header>
         <section class="title">
             <div class="header-image">
-                <img src="assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" />
+                <img src="docs/assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" />
             </div>
             <div class="">
                 <h1><a href="">Assis Zang</a></h1>
