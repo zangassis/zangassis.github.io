@@ -293,3 +293,16 @@ blockquote {
 .hljs-meta {
     color: #75715e;
 }
+
+header .title .header-image {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+h1.page-title {
+    margin-top: 5rem;
+    font-size: 2.828rem;
+    line-height: 3rem;
+}

@@ -1,10 +1,8 @@
-<img src="docs/assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" /> 
-
 # My Writing career ✍👨‍💼
 
 I've always had an aptitude for writing, since elementary school, I loved to spend hours reading books, this gave me a great facility to interpret texts, something that helped me a lot in my software development career.
 
-By combining my programming knowledge with writing, I found the perfect formula: writing technical articles.
+By combining my programming knowledge with writing, I found the perfect formula: **writing technical articles**.
 
 That's why I'm always improving my writing by taking courses in that area, reading specialized websites and looking for topics that are relevant to the reading public.
 
