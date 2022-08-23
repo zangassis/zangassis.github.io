@@ -1,4 +1,4 @@
-![Assis Zang](assets/images/assis-zang.png "Assis Zang")
+![Assis Zang](docs/assets/images/assiszang.png "Assis Zang")
 
 # My Writing career ✍👨‍💼
 
