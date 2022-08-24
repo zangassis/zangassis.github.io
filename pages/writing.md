@@ -13,9 +13,7 @@
             </div>
         </section>
     </header>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Pacifico&family=Patrick+Hand&display=swap');
-</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Pacifico&family=Patrick+Hand&display=swap');</style>
 
 # My Writing career ✍
 
@@ -49,4 +47,5 @@ Something I always do is reflect on the positives and negatives in the routine o
 ## How can I help you? 💁‍♂️
 
 I work as a freelance writer and would love to help you get high quality technical content for your blog. 
+
 Send an email to assiszang@gmail.com and let's talk!
