@@ -1,12 +1,12 @@
  <header>
         <section class="title">
             <div class="header-image">
-                <img src="docs/assets/images/assiszang.png " alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" />
+                <img src="docs/assets/images/assiszang.png" alt="Assis Zang" title="Assis Zang" style="height: 100px; width: 100px;" />
             </div>
             <div class="">
-                <h1><a href="">Assis Zang</a></h1>
+                <h1>Assis Zang</h1>
                 <nav>
-                    <a href="">Startups</a> ·
+                    <a href="?index">Home</a> ·
                     <a href="">Software Engineering</a> ·
                     <a href="">Management</a>
                 </nav>
