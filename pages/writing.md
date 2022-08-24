@@ -13,8 +13,11 @@
             </div>
         </section>
     </header>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Pacifico&family=Patrick+Hand&display=swap');
+</style>
 
-# My Writing career ✍👨‍💼
+# My Writing career ✍
 
 I've always had an aptitude for writing, since elementary school, I loved to spend hours reading books, this gave me a great facility to interpret texts, something that helped me a lot in my software development career.
 
