@@ -7,8 +7,8 @@
                 <h1>Assis Zang</h1>
                 <nav>
                     <a href="?index">Home</a> ·
-                    <a href="">Software Engineering</a> ·
-                    <a href="">Management</a>
+                    <a href="https://github.com/zangassis">GitHub</a> .
+                    <a href="https://www.linkedin.com/in/assis-zang">Linkedin</a>
                 </nav>
             </div>
         </section>
