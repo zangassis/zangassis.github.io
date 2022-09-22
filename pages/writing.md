@@ -21,7 +21,7 @@ I've always had an aptitude for writing, since elementary school, I loved to spe
 
 By combining my programming knowledge with writing, I found the perfect formula: **writing technical articles**.
 
-That's why I'm always improving my writing by taking courses in that area, reading specialized websites and looking for topics that are relevant to the reading public.
+That's why I'm always improving my writing by taking [courses](https://www.linkedin.com/learning/certificates/0c93d9fe9b160bc50077bd4a1c365ce7ecd11c02a6b34c96b77ad72f31a290ee) in that area, reading specialized [books](https://www.amazon.com/Essential-Guide-Freelance-Writing-Thrive/dp/159963905X?language=en_US) and looking for topics that are relevant to the reading public.
 
 ## Tutorials 🧩
 
