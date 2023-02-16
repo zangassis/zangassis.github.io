@@ -6,9 +6,9 @@
             <div class="">
                 <h1>Assis Zang</h1>
                 <nav>
-                    <a href="?writing">My writing career</a> . 
-                    <a href="https://github.com/zangassis">GitHub</a> .
-                    <a href="https://www.linkedin.com/in/assis-zang">Linkedin</a>
+                    <a href="?writing">My writing career✍</a> . 
+                    <a href="https://github.com/zangassis">GitHub🐱‍👤</a> .
+                    <a href="https://www.linkedin.com/in/assis-zang">Linkedin👨‍🎓</a>
                 </nav>
             </div>
         </section>
