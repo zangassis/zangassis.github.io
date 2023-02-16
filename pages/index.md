@@ -17,6 +17,8 @@
 
 ## Hello, my name is Assis 👋 
 
-I'm a programmer and writer. I have been working since 2017 as a backend software developer with Microsoft technologies. 
+I'm a programmer and writer. I've been working since 2017 as a back-end software developer with Microsoft technologies. I also write for the [Telerik blog](https://www.telerik.com/blogs/author/assis-zang) and my [personal blog](https://dev.to/zangassis).
 
-I write for the [Telerik blog](https://www.telerik.com/blogs/author/assis-zang) and also create articles for my [personal blog](https://dev.to/zangassis).
+I believe that technology and reading have an extraordinary power to transform people's lives, which is why I feel very happy to be part of this transformation.
+
+If you want to know more about my work as a writer, just click here: 👉 [My writing career](https://zangassis.github.io/?writing).
