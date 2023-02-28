@@ -1631,3 +1631,13 @@ $size-header-pad: 4em;
 			}
 
 	}
+
+	@include ind {
+		color: black !important;
+		text-decoration: none;
+	}
+	
+	&:hover {
+		color: #ff3d00 !important;
+		text-decoration: none;
+	}
