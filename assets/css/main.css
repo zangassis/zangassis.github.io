@@ -1765,7 +1765,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #b2b2b2;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2144,6 +2144,7 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+				border: 2px solid #ff3d00;
 			}
 
 /* List */
@@ -2624,7 +2625,7 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #f1ece1;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2632,7 +2633,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: #ffffff;
+			color: #f1ece1;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2684,7 +2685,7 @@ input, select, textarea {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 2em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
@@ -2698,7 +2699,7 @@ input, select, textarea {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
-				padding-bottom: 15em;
+				padding: 2em 0 0 0;
 			}
 
 /* Poptrox */
