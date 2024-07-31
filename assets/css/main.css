@@ -110,13 +110,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		color: #FF3D00;
+		color: #558DC9;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f37247 !important;
+			color: #A4C4E0 !important;
 			text-decoration: none;
 		}
 
@@ -141,7 +141,7 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: #FF3D00;
+			color: #558DC9;
 			text-decoration: none;
 		}
 
@@ -1794,6 +1794,10 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+	#my-writing {
+		font-size: 1.5em;
+	}
+
 /* Form */
 
 	form {
@@ -2144,7 +2148,7 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
-				border: 2px solid #ff3d00;
+				border: 5px solid #558DC9;
 			}
 
 /* List */
@@ -2232,7 +2236,7 @@ input, select, textarea {
 			}
 
 			ul.labeled-icons li h3 {
-				color: #FF3D00;
+				color: #558DC9;
 				left: 0;
 				position: absolute;
 				text-align: center;
@@ -2447,7 +2451,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #ff3d00 !important;
+		color: #558DC9 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2465,8 +2469,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #ff3d00 !important;
-			color: #ff3d00 !important;
+			border-color: #558DC9 !important;
+			color: #558DC9 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2474,8 +2478,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(183, 72, 12, 0.294);
-			border-color: #ff3d00 !important;
-			color: #ff3d00 !important;
+			border-color: #558DC9 !important;
+			color: #558DC9 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2597,7 +2601,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								cover;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2625,7 +2629,7 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #f1ece1;
+			color: #A4C4E0;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2633,7 +2637,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: #f1ece1;
+			color: #A4C4E0;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2690,8 +2694,7 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #ff3d00;
-			margin: 4em 0 0 0;
+			border-top: solid 2px #558DC9;
 			padding: 2em 0 0 0;
 		}
 
