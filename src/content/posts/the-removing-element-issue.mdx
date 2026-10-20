@@ -1,7 +1,7 @@
 ---
 author: Assis Zang
 pubDatetime: 2026-10-20T10:40:53Z
-modDatetime: 2021-10-20T00:00:00.000Z
+modDatetime: 2026-10-20T00:00:00.000Z
 title: The Removing Element Issue
 slug: the-removing-element-issue
 featured: true
@@ -13,7 +13,7 @@ tags:
   - algorithms
   - interview
 
-description: Today we're going to discuss a classical tech interview problem: **Inserting**, **Removing**, and **Retrieving** a **Random** **Element**.
+description: Today we're going to discuss a classical tech interview problem - Inserting, Removing, and Retrieving a Random Element.
 ---
 import ResponsiveTable from '@/components/ResponsiveTable.astro';
 
@@ -50,11 +50,11 @@ set.GetRandom(); // 20
 
 ## 2. Choosing the right data structures
 
-The key challenge is <mark>achieving O(1) average time complexity for all three operations<mark>.
+The key challenge is <mark>achieving O(1) average time complexity for all three operations</mark>.
 
 For that, we can combine two data structures:
 
-- `List`: We use a List<int> because we need to retrieve a random element in O(1) time
+- `List`: We use a `List<int>` because we need to retrieve a random element in O(1) time
 
 - `Dictionary`: We use a dictionary here because it maps each value to its index in the list, allowing us to find a value in O(1) average time)
 
@@ -130,7 +130,7 @@ public class Program
 
 ## 4. The tricky part: removing an element in O(1)
 
-This is the part interviewers often focus on. Removing an element from the middle of a List<int> normally requires shifting subsequent elements, which takes O(n) time.
+This is the part interviewers often focus on. Removing an element from the middle of a `List<int>` normally requires shifting subsequent elements, which takes O(n) time.
 
 Instead, we swap the element we want to remove with the last element and then remove the last element.
 
