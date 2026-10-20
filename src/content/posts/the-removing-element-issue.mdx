@@ -1,0 +1,213 @@
+---
+author: Assis Zang
+pubDatetime: 2026-10-20T10:40:53Z
+modDatetime: 2021-10-20T00:00:00.000Z
+title: The Removing Element Issue
+slug: the-removing-element-issue
+featured: true
+draft: false
+hideEditPost: true
+tags:
+  - c#
+  - data-structure
+  - algorithms
+  - interview
+
+description: Today we're going to discuss a classical tech interview problem: **Inserting**, **Removing**, and **Retrieving** a **Random** **Element**.
+---
+import ResponsiveTable from '@/components/ResponsiveTable.astro';
+
+> [!NOTE]
+> This post was originally published on dev.to: [https://dev.to/zangassis/the-removing-element-issue-h5i](https://dev.to/zangassis/the-removing-element-issue-h5i).
+
+Today we're going to discuss a classical tech interview problem: **Inserting**, **Removing**, and **Retrieving** a **Random** **Element**.
+
+Let's approach it as if you were explaining your solution to an interviewer.
+
+## 1. Understanding the requirements
+
+First of all, we need a class (called here RandomizedSet) with three main operations:
+
+**1. Insert**(int value): Inserts a value if it doesn't already exist
+**2. Remove**(int value): Removes a value if it exists
+**3. GetRandom**(): Returns one of the stored values
+
+For example:
+
+```csharp
+var set = new RandomizedSet();
+
+set.Insert(10); // true
+set.Insert(20); // true
+set.Insert(10); // false (duplicate)
+
+set.GetRandom(); // 10 or 20
+
+set.Remove(10); // true
+
+set.GetRandom(); // 20
+```
+
+## 2. Choosing the right data structures
+
+The key challenge is <mark>achieving O(1) average time complexity for all three operations<mark>.
+
+For that, we can combine two data structures:
+
+- `List`: We use a List<int> because we need to retrieve a random element in O(1) time
+
+- `Dictionary`: We use a dictionary here because it maps each value to its index in the list, allowing us to find a value in O(1) average time)
+
+Why not use only a `HashSet<int>`? Although it supports fast insertion and removal, it doesn't provide a direct way to retrieve a uniformly random element by index.
+
+The combination of a list and dictionary solves perfectly this problem.
+
+## 3. C# implementation
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+public class RandomizedSet
+{
+    private readonly List<int> values = new();
+    private readonly Dictionary<int, int> indices = new();
+    private readonly Random random = new();
+
+    public bool Insert(int value)
+    {
+        if (indices.ContainsKey(value))
+            return false;
+
+        indices[value] = values.Count;
+        values.Add(value);
+
+        return true;
+    }
+
+    public bool Remove(int value)
+    {
+        if (!indices.TryGetValue(value, out int index))
+            return false;
+
+        int lastIndex = values.Count - 1;
+        int lastValue = values[lastIndex];
+
+        values[index] = lastValue;
+        indices[lastValue] = index;
+
+        values.RemoveAt(lastIndex);
+        indices.Remove(value);
+
+        return true;
+    }
+
+    public int GetRandom()
+    {
+        if (values.Count == 0)
+            throw new InvalidOperationException("Set is empty.");
+
+        return values[random.Next(values.Count)];
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        var set = new RandomizedSet();
+
+        Console.WriteLine(set.Insert(10)); // True
+        Console.WriteLine(set.Insert(20)); // True
+        Console.WriteLine(set.Insert(10)); // False
+
+        Console.WriteLine(set.Remove(10)); // True
+
+        Console.WriteLine(set.GetRandom()); // 20
+    }
+}
+```
+
+## 4. The tricky part: removing an element in O(1)
+
+This is the part interviewers often focus on. Removing an element from the middle of a List<int> normally requires shifting subsequent elements, which takes O(n) time.
+
+Instead, we swap the element we want to remove with the last element and then remove the last element.
+
+For example, suppose our collection contains:
+
+### Initial list
+
+| Index | 0 | 1 | 2 | 3 |
+|---|---:|---:|---:|---:|
+| Value | 10 | **20** | 30 | 40 |
+
+We want to remove the value `20`.
+
+### Step 1: Replace it with the last element
+
+Move the last element (`40`) to the index of the element we want to remove.
+
+| Index | 0 | 1 | 2 | 3 |
+|---|---:|---:|---:|---:|
+| Value | 10 | **40** | 30 | 40 |
+
+### Step 2: Remove the last element
+
+Remove the last element from the list.
+
+| Index | 0 | 1 | 2 |
+|---|---:|---:|---:|
+| Value | 10 | **40** | 30 |
+
+The final list is `[10, 40, 30]`.
+
+**Note:** We must also update the dictionary so that `40` points to index `1` and remove the entry for `20`.
+
+This approach avoids shifting elements in the list, allowing us to remove a value in O(1) time on average.
+
+The order of the elements doesn't matter because GetRandom() selects an element by its current index.
+
+Illustrating the removal of a random element:
+
+![Illustrating the removal of a random element](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/sv4jrdudhf32n1ktbk1u.png)
+
+Important edge case: If the value being removed is already the last element, the same algorithm still works. The value is assigned to its own position before being removed, and its dictionary entry is then deleted.
+
+## 5. Complexity analysis
+
+Operation    | Average time complexity | Reason
+------------ | ------------- | -------------
+Insert | O(1) | Dictionary lookup and list append
+Remove | O(1) | Dictionary lookup, swap, and removal at the end
+GetRandom | O(1) | Generate a random index and access the list
+
+Space complexity is O(n), where n is the number of stored integers.
+
+The complexity assumes the usual average-case behavior of dictionary operations and amortized O(1) list append.
+
+## 6. How to explain your solution in an interview
+
+You could say something like this:
+
+> I would use two data structures: a list and a dictionary.
+
+> The list allows me to retrieve a random element by index in constant time. The dictionary maps each integer to its index in the list, so I can check whether a value exists and find it quickly.
+
+> For insertion, I first check whether the value already exists. If it doesn't, I add it to both data structures.
+
+> For removal, I avoid removing an element directly from the middle of the list because that would require shifting elements. Instead, I replace the element with the last element in the list, update the dictionary, and remove the last element.
+
+> Finally, to get a random value, I generate a random index within the list bounds and return the element at that index.
+
+> This approach gives us O(1) average time complexity for all three operations, with O(n) space complexity.
+
+## wrap up
+
+I hope this post helps you practice data structure and prepare for your future tech interviews! 
+
+You can run the code example demonstrated in the post in these programming playgrounds:
+
+🍰Running in Fiddle: [https://dotnetfiddle.net/cXqu21](https://dotnetfiddle.net/cXqu21)
+
+🧁Running in SharePad: [https://sharepad.io/live/bNf56Me](https://sharepad.io/live/bNf56Me)
